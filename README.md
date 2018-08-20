@@ -11,5 +11,5 @@ Reference: Manikandan, M. S., & Soman, K. P. (2012). A novel method for detectin
 * `wfdb`
 * `bokeh`
 
-The code pulls the EKG data from WFDB website, processes the data, and plots the outcome.
+The code pulls the EKG data from WFDB website (https://physionet.org/physiobank/database/mitdb/), processes the data, and plots the outcome.
 The output does not match with the publication. I'm working on it to match it with the pub. If anyone can point out what's wrong, I will appreciate it.
