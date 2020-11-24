@@ -131,7 +131,7 @@ for i in idx:
     highs = np.arange(i+1, i+search_window_half+1)
     if highs[-1] > len(EKG):
         highs = np.delete(highs, np.arange(np.where(highs == len(EKG))[0], len(highs)+1))
-    ekg_window = np.concatenate([lows, i, highs])
+    ekg_window = np.concatenate((lows, [i], highs))
     idx_search.append(ekg_window)
     ekg_window_wave = EKG[ekg_window]
     id_maxes = np.append(id_maxes, ekg_window[np.where(ekg_window_wave == np.max(ekg_window_wave))[0]])
